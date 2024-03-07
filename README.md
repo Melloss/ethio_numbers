@@ -3,6 +3,8 @@
 ## Features
 
 TODO: Number to Amharic Text.
+[ethio_numbers_sample.webm](https://github.com/Melloss/ethio_numbers/assets/101984338/07a784eb-cdb7-41ce-9507-6deca79bcadc)
+
 
 ## Getting started
 you can add the package using the following command
