@@ -1,8 +1,8 @@
 `ethio_numbers` is a package used to convert number to Amharic text upto decillion (10^33) number
 
-<!-- ## Features
+## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos. -->
+TODO: Number to Amharic Text.
 
 ## Getting started
 you can add the package using the following command
