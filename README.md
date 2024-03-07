@@ -1,4 +1,4 @@
-`ethio_numbers` is package used to convert number to Amharic text upto decillion (10^33) number
+`ethio_numbers` is a package used to convert number to Amharic text upto decillion (10^33) number
 
 <!-- ## Features
 
