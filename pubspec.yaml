@@ -1,5 +1,5 @@
 name: ethio_numbers
-description: "A new Flutter package project."
+description: "the package used to convert number to Amharic text upto decillion (10^33) number"
 version: 0.0.1
 homepage:
 

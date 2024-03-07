@@ -8,12 +8,12 @@ TODO: List what your package can do. Maybe include images, gifs, or videos. -->
 you can add the package using the following command
 
 ```
-    flutter pub add ethio_numbers
+flutter pub add ethio_numbers
 ```
 or
 
 ```
-    dart pub add ethio_numbers
+dart pub add ethio_numbers
 ```
 
 
