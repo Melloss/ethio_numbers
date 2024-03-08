@@ -3,7 +3,7 @@
 ## Features
 
 * Number to Amharic Text.
-* Number to Afaan Oromo.
+* Number to Afaan Oromo Text.
 
 ## Getting started
 you can add the package using the following command
