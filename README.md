@@ -23,7 +23,7 @@ Import the package in your Dart code:
 ```dart
 import 'package:ethio_numbers/ethio_numbers.dart';
 ```
-convert the number using `.toAmharicText()` extension.
+convert the number using `.toAmharicText()` or `.toAfaanOromoText()` extension.
 
 
 ```dart
