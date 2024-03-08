@@ -1,8 +1,9 @@
-`ethio_numbers` package used to convert number to Amharic text upto decillion (10^33) number.
+`ethio_numbers` package used to convert number to Amharic or Afaan Oromo text upto decillion (10^33) number.
 
 ## Features
 
 * Number to Amharic Text.
+* Number to Afaan Oromo.
 
 ## Getting started
 you can add the package using the following command
@@ -27,6 +28,7 @@ convert the number using `.toAmharicText()` extension.
 
 ```dart
 print(7023.toAmharicText()); //Output: ሰባት ሺ ሀያ ሶስት
+print(125.toAfaanOromoText()); //Output:dhibba digdamii shan
 ```
 
 ## Contributions
