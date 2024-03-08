@@ -1,7 +1,7 @@
 name: ethio_numbers
 description: "the package used to convert number to Amharic text upto decillion (10^33) number"
 version: 0.0.1
-homepage:
+repository: https://github.com/Melloss/ethio_numbers
 
 environment:
   sdk: '>=3.2.3 <4.0.0'
