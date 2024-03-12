@@ -1,4 +1,4 @@
-`ethio_numbers` package used to convert arabic number to Amharic or Afaan Oromo text upto decillion (10^33) number.
+`ethio_numbers` package used to convert Arabic number to Amharic or Afaan Oromo text upto decillion (10^33) number.
 
 ## Features
 
@@ -42,6 +42,7 @@ double money = 34.50;
 money.toAmharicText(monetizeValue: true); //Output: ሰላሳ አራት ብር ከ ሃምሳ ሳንቲም
 
 double n = 524.53523;
+n.toAmharicText(); //Output: አምስት መቶ ሃያ አራት ነጥብ አምስት ሶስት አምስት ሁለት ሶስት
 n.toAmharicText(fractionDigits: 2); //Output: አምስት መቶ ሃያ አራት ነጥብ አምስት አራት
 
 ```

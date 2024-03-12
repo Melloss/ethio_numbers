@@ -3,6 +3,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:ethio_numbers/ethio_numbers.dart';
 
 void main() {
+  print(524.53523.toAmharicText());
   group('Amharic Number -> ', () {
     test('when number is 300 it should return ሶስት መቶ', () {
       expect(300.toAmharicText(), 'ሶስት መቶ');
