@@ -1,14 +1,14 @@
 class AfaanOromoNumber {
-  // this method changes number to amharic letter including negative number
+  /// used to changes double number to afaan oromo text including negative number.
   static String changeToAfaanOromoText(int number) {
     if (number.isNegative) {
-      return 'Lakkoofsa Hirisoo: ${convertNumberToAfaanOromoText(number.abs())}'
+      return 'Lakkoofsa Hirisoo: ${_convertNumberToAfaanOromoText(number.abs())}'
           .trim();
     }
-    return convertNumberToAfaanOromoText(number).trim();
+    return _convertNumberToAfaanOromoText(number).trim();
   }
 
-  static String convertNumberToAfaanOromoText(int number) {
+  static String _convertNumberToAfaanOromoText(int number) {
     String n = number.toString();
     if (n.length == 1) {
       return _getOnes(number);
@@ -17,178 +17,176 @@ class AfaanOromoNumber {
         return _getTens(int.parse(n[0]));
       }
       return '${_getTens(int.parse(n[0]), isFullNumber: true)} ${_getOnes(int.parse(n[1]))}';
-
-      // return '${_getTens(int.parse(n[0]))} ${_getOnes(int.parse(n[1]))}';
     } else if (n.length == 3) {
       int lastNumbers = int.parse(n.substring(1));
       int firstNumbers = int.parse(n.substring(0, 1));
 
-      return '${n[0] == '1' ? '' : convertNumberToAfaanOromoText(firstNumbers)} dhibba ${lastNumbers != 0 ? convertNumberToAfaanOromoText(lastNumbers) : ''}';
+      return '${n[0] == '1' ? '' : _convertNumberToAfaanOromoText(firstNumbers)} dhibba ${lastNumbers != 0 ? _convertNumberToAfaanOromoText(lastNumbers) : ''}';
     } else if (n.length == 4) {
       int firstNumbers = int.parse(n.substring(0, 1));
       int lastNumbers = int.parse(n.substring(1));
 
-      return '${n[0] == '1' ? '' : convertNumberToAfaanOromoText(firstNumbers)} kuma ${lastNumbers != 0 ? convertNumberToAfaanOromoText(lastNumbers) : ''}';
+      return '${n[0] == '1' ? '' : _convertNumberToAfaanOromoText(firstNumbers)} kuma ${lastNumbers != 0 ? _convertNumberToAfaanOromoText(lastNumbers) : ''}';
     } else if (n.length == 5) {
       int firstNumbers = int.parse(n.substring(0, 2));
       int lastNumbers = int.parse(n.substring(2));
 
-      return '${convertNumberToAfaanOromoText(firstNumbers)} kuma ${lastNumbers != 0 ? convertNumberToAfaanOromoText(lastNumbers) : ''}';
+      return '${_convertNumberToAfaanOromoText(firstNumbers)} kuma ${lastNumbers != 0 ? _convertNumberToAfaanOromoText(lastNumbers) : ''}';
     } else if (n.length == 6) {
       int firstNumbers = int.parse(n.substring(0, 3));
       int lastNumbers = int.parse(n.substring(3));
 
-      return '${convertNumberToAfaanOromoText(firstNumbers)} kuma ${lastNumbers != 0 ? convertNumberToAfaanOromoText(lastNumbers) : ''}';
+      return '${_convertNumberToAfaanOromoText(firstNumbers)} kuma ${lastNumbers != 0 ? _convertNumberToAfaanOromoText(lastNumbers) : ''}';
     } else if (n.length == 7) {
       int firstNumbers = int.parse(n.substring(0, 1));
       int lastNumbers = int.parse(n.substring(1));
 
-      return '${n[0] == '1' ? '' : convertNumberToAfaanOromoText(firstNumbers)} milliyoonii ${lastNumbers != 0 ? convertNumberToAfaanOromoText(lastNumbers) : ''}';
+      return '${n[0] == '1' ? '' : _convertNumberToAfaanOromoText(firstNumbers)} milliyoonii ${lastNumbers != 0 ? _convertNumberToAfaanOromoText(lastNumbers) : ''}';
     } else if (n.length == 8) {
       int firstNumbers = int.parse(n.substring(0, 2));
       int lastNumbers = int.parse(n.substring(2));
 
-      return '${convertNumberToAfaanOromoText(firstNumbers)} milliyoonii ${lastNumbers != 0 ? convertNumberToAfaanOromoText(lastNumbers) : ''}';
+      return '${_convertNumberToAfaanOromoText(firstNumbers)} milliyoonii ${lastNumbers != 0 ? _convertNumberToAfaanOromoText(lastNumbers) : ''}';
     } else if (n.length == 9) {
       int firstNumbers = int.parse(n.substring(0, 3));
       int lastNumbers = int.parse(n.substring(3));
 
-      return '${convertNumberToAfaanOromoText(firstNumbers)} milliyoonii ${lastNumbers != 0 ? convertNumberToAfaanOromoText(lastNumbers) : ''}';
+      return '${_convertNumberToAfaanOromoText(firstNumbers)} milliyoonii ${lastNumbers != 0 ? _convertNumberToAfaanOromoText(lastNumbers) : ''}';
     } else if (n.length == 10) {
       int firstNumbers = int.parse(n.substring(0, 1));
       int lastNumbers = int.parse(n.substring(1));
 
-      return '${convertNumberToAfaanOromoText(firstNumbers)} billiyoonii ${lastNumbers != 0 ? convertNumberToAfaanOromoText(lastNumbers) : ''}';
+      return '${_convertNumberToAfaanOromoText(firstNumbers)} billiyoonii ${lastNumbers != 0 ? _convertNumberToAfaanOromoText(lastNumbers) : ''}';
     } else if (n.length == 11) {
       int firstNumbers = int.parse(n.substring(0, 2));
       int lastNumbers = int.parse(n.substring(2));
 
-      return '${convertNumberToAfaanOromoText(firstNumbers)} billiyoonii ${lastNumbers != 0 ? convertNumberToAfaanOromoText(lastNumbers) : ''}';
+      return '${_convertNumberToAfaanOromoText(firstNumbers)} billiyoonii ${lastNumbers != 0 ? _convertNumberToAfaanOromoText(lastNumbers) : ''}';
     } else if (n.length == 12) {
       int firstNumbers = int.parse(n.substring(0, 3));
       int lastNumbers = int.parse(n.substring(3));
 
-      return '${convertNumberToAfaanOromoText(firstNumbers)} billiyoonii ${lastNumbers != 0 ? convertNumberToAfaanOromoText(lastNumbers) : ''}';
+      return '${_convertNumberToAfaanOromoText(firstNumbers)} billiyoonii ${lastNumbers != 0 ? _convertNumberToAfaanOromoText(lastNumbers) : ''}';
     } else if (n.length == 13) {
       int firstNumbers = int.parse(n.substring(0, 1));
       int lastNumbers = int.parse(n.substring(1));
 
-      return '${convertNumberToAfaanOromoText(firstNumbers)} trilliyoonii ${lastNumbers != 0 ? convertNumberToAfaanOromoText(lastNumbers) : ''}';
+      return '${_convertNumberToAfaanOromoText(firstNumbers)} trilliyoonii ${lastNumbers != 0 ? _convertNumberToAfaanOromoText(lastNumbers) : ''}';
     } else if (n.length == 14) {
       int firstNumbers = int.parse(n.substring(0, 2));
       int lastNumbers = int.parse(n.substring(2));
 
-      return '${convertNumberToAfaanOromoText(firstNumbers)} trilliyoonii ${lastNumbers != 0 ? convertNumberToAfaanOromoText(lastNumbers) : ''}';
+      return '${_convertNumberToAfaanOromoText(firstNumbers)} trilliyoonii ${lastNumbers != 0 ? _convertNumberToAfaanOromoText(lastNumbers) : ''}';
     } else if (n.length == 15) {
       int firstNumbers = int.parse(n.substring(0, 3));
       int lastNumbers = int.parse(n.substring(3));
 
-      return '${convertNumberToAfaanOromoText(firstNumbers)} trilliyoonii ${lastNumbers != 0 ? convertNumberToAfaanOromoText(lastNumbers) : ''}';
+      return '${_convertNumberToAfaanOromoText(firstNumbers)} trilliyoonii ${lastNumbers != 0 ? _convertNumberToAfaanOromoText(lastNumbers) : ''}';
     } else if (n.length == 16) {
       int firstNumbers = int.parse(n.substring(0, 1));
       int lastNumbers = int.parse(n.substring(1));
 
-      return '${convertNumberToAfaanOromoText(firstNumbers)} kuadrilliyoonii ${lastNumbers != 0 ? convertNumberToAfaanOromoText(lastNumbers) : ''}';
+      return '${_convertNumberToAfaanOromoText(firstNumbers)} kuadrilliyoonii ${lastNumbers != 0 ? _convertNumberToAfaanOromoText(lastNumbers) : ''}';
     } else if (n.length == 17) {
       int firstNumbers = int.parse(n.substring(0, 2));
       int lastNumbers = int.parse(n.substring(2));
 
-      return '${convertNumberToAfaanOromoText(firstNumbers)} kuadrilliyoonii ${lastNumbers != 0 ? convertNumberToAfaanOromoText(lastNumbers) : ''}';
+      return '${_convertNumberToAfaanOromoText(firstNumbers)} kuadrilliyoonii ${lastNumbers != 0 ? _convertNumberToAfaanOromoText(lastNumbers) : ''}';
     } else if (n.length == 18) {
       int firstNumbers = int.parse(n.substring(0, 3));
       int lastNumbers = int.parse(n.substring(3));
 
-      return '${convertNumberToAfaanOromoText(firstNumbers)} kuadrilliyoonii ${lastNumbers != 0 ? convertNumberToAfaanOromoText(lastNumbers) : ''}';
+      return '${_convertNumberToAfaanOromoText(firstNumbers)} kuadrilliyoonii ${lastNumbers != 0 ? _convertNumberToAfaanOromoText(lastNumbers) : ''}';
     } else if (n.length == 19) {
       int firstNumbers = int.parse(n.substring(0, 1));
       int lastNumbers = int.parse(n.substring(1));
 
-      return '${convertNumberToAfaanOromoText(firstNumbers)} kuantilliyoonii ${lastNumbers != 0 ? convertNumberToAfaanOromoText(lastNumbers) : ''}';
+      return '${_convertNumberToAfaanOromoText(firstNumbers)} kuantilliyoonii ${lastNumbers != 0 ? _convertNumberToAfaanOromoText(lastNumbers) : ''}';
     } else if (n.length == 20) {
       int firstNumbers = int.parse(n.substring(0, 2));
       int lastNumbers = int.parse(n.substring(2));
 
-      return '${convertNumberToAfaanOromoText(firstNumbers)} kuantilliyoonii ${lastNumbers != 0 ? convertNumberToAfaanOromoText(lastNumbers) : ''}';
+      return '${_convertNumberToAfaanOromoText(firstNumbers)} kuantilliyoonii ${lastNumbers != 0 ? _convertNumberToAfaanOromoText(lastNumbers) : ''}';
     } else if (n.length == 21) {
       int firstNumbers = int.parse(n.substring(0, 3));
       int lastNumbers = int.parse(n.substring(3));
 
-      return '${convertNumberToAfaanOromoText(firstNumbers)} kuantilliyoonii ${lastNumbers != 0 ? convertNumberToAfaanOromoText(lastNumbers) : ''}';
+      return '${_convertNumberToAfaanOromoText(firstNumbers)} kuantilliyoonii ${lastNumbers != 0 ? _convertNumberToAfaanOromoText(lastNumbers) : ''}';
     } else if (n.length == 22) {
       int firstNumbers = int.parse(n.substring(0, 1));
       int lastNumbers = int.parse(n.substring(1));
 
-      return '${convertNumberToAfaanOromoText(firstNumbers)} sextilliyoonii ${lastNumbers != 0 ? convertNumberToAfaanOromoText(lastNumbers) : ''}';
+      return '${_convertNumberToAfaanOromoText(firstNumbers)} sextilliyoonii ${lastNumbers != 0 ? _convertNumberToAfaanOromoText(lastNumbers) : ''}';
     } else if (n.length == 23) {
       int firstNumbers = int.parse(n.substring(0, 2));
       int lastNumbers = int.parse(n.substring(2));
 
-      return '${convertNumberToAfaanOromoText(firstNumbers)} sextilliyoonii ${lastNumbers != 0 ? convertNumberToAfaanOromoText(lastNumbers) : ''}';
+      return '${_convertNumberToAfaanOromoText(firstNumbers)} sextilliyoonii ${lastNumbers != 0 ? _convertNumberToAfaanOromoText(lastNumbers) : ''}';
     } else if (n.length == 24) {
       int firstNumbers = int.parse(n.substring(0, 3));
       int lastNumbers = int.parse(n.substring(3));
 
-      return '${convertNumberToAfaanOromoText(firstNumbers)} sextilliyoonii ${lastNumbers != 0 ? convertNumberToAfaanOromoText(lastNumbers) : ''}';
+      return '${_convertNumberToAfaanOromoText(firstNumbers)} sextilliyoonii ${lastNumbers != 0 ? _convertNumberToAfaanOromoText(lastNumbers) : ''}';
     } else if (n.length == 25) {
       int firstNumbers = int.parse(n.substring(0, 1));
       int lastNumbers = int.parse(n.substring(1));
 
-      return '${convertNumberToAfaanOromoText(firstNumbers)} septilliyoonii ${lastNumbers != 0 ? convertNumberToAfaanOromoText(lastNumbers) : ''}';
+      return '${_convertNumberToAfaanOromoText(firstNumbers)} septilliyoonii ${lastNumbers != 0 ? _convertNumberToAfaanOromoText(lastNumbers) : ''}';
     } else if (n.length == 26) {
       int firstNumbers = int.parse(n.substring(0, 2));
       int lastNumbers = int.parse(n.substring(2));
 
-      return '${convertNumberToAfaanOromoText(firstNumbers)} septilliyoonii ${lastNumbers != 0 ? convertNumberToAfaanOromoText(lastNumbers) : ''}';
+      return '${_convertNumberToAfaanOromoText(firstNumbers)} septilliyoonii ${lastNumbers != 0 ? _convertNumberToAfaanOromoText(lastNumbers) : ''}';
     } else if (n.length == 27) {
       int firstNumbers = int.parse(n.substring(0, 3));
       int lastNumbers = int.parse(n.substring(3));
 
-      return '${convertNumberToAfaanOromoText(firstNumbers)} septilliyoonii ${lastNumbers != 0 ? convertNumberToAfaanOromoText(lastNumbers) : ''}';
+      return '${_convertNumberToAfaanOromoText(firstNumbers)} septilliyoonii ${lastNumbers != 0 ? _convertNumberToAfaanOromoText(lastNumbers) : ''}';
     } else if (n.length == 28) {
       int firstNumbers = int.parse(n.substring(0, 1));
       int lastNumbers = int.parse(n.substring(1));
 
-      return '${convertNumberToAfaanOromoText(firstNumbers)} octilliyoonii ${lastNumbers != 0 ? convertNumberToAfaanOromoText(lastNumbers) : ''}';
+      return '${_convertNumberToAfaanOromoText(firstNumbers)} octilliyoonii ${lastNumbers != 0 ? _convertNumberToAfaanOromoText(lastNumbers) : ''}';
     } else if (n.length == 29) {
       int firstNumbers = int.parse(n.substring(0, 2));
       int lastNumbers = int.parse(n.substring(2));
 
-      return '${convertNumberToAfaanOromoText(firstNumbers)} octilliyoonii ${lastNumbers != 0 ? convertNumberToAfaanOromoText(lastNumbers) : ''}';
+      return '${_convertNumberToAfaanOromoText(firstNumbers)} octilliyoonii ${lastNumbers != 0 ? _convertNumberToAfaanOromoText(lastNumbers) : ''}';
     } else if (n.length == 30) {
       int firstNumbers = int.parse(n.substring(0, 3));
       int lastNumbers = int.parse(n.substring(3));
 
-      return '${convertNumberToAfaanOromoText(firstNumbers)} octilliyoonii ${lastNumbers != 0 ? convertNumberToAfaanOromoText(lastNumbers) : ''}';
+      return '${_convertNumberToAfaanOromoText(firstNumbers)} octilliyoonii ${lastNumbers != 0 ? _convertNumberToAfaanOromoText(lastNumbers) : ''}';
     } else if (n.length == 28) {
       int firstNumbers = int.parse(n.substring(0, 1));
       int lastNumbers = int.parse(n.substring(1));
 
-      return '${convertNumberToAfaanOromoText(firstNumbers)} nonilliyoonii ${lastNumbers != 0 ? convertNumberToAfaanOromoText(lastNumbers) : ''}';
+      return '${_convertNumberToAfaanOromoText(firstNumbers)} nonilliyoonii ${lastNumbers != 0 ? _convertNumberToAfaanOromoText(lastNumbers) : ''}';
     } else if (n.length == 29) {
       int firstNumbers = int.parse(n.substring(0, 2));
       int lastNumbers = int.parse(n.substring(2));
 
-      return '${convertNumberToAfaanOromoText(firstNumbers)} nonilliyoonii ${lastNumbers != 0 ? convertNumberToAfaanOromoText(lastNumbers) : ''}';
+      return '${_convertNumberToAfaanOromoText(firstNumbers)} nonilliyoonii ${lastNumbers != 0 ? _convertNumberToAfaanOromoText(lastNumbers) : ''}';
     } else if (n.length == 30) {
       int firstNumbers = int.parse(n.substring(0, 3));
       int lastNumbers = int.parse(n.substring(3));
 
-      return '${convertNumberToAfaanOromoText(firstNumbers)} nonilliyoonii ${lastNumbers != 0 ? convertNumberToAfaanOromoText(lastNumbers) : ''}';
+      return '${_convertNumberToAfaanOromoText(firstNumbers)} nonilliyoonii ${lastNumbers != 0 ? _convertNumberToAfaanOromoText(lastNumbers) : ''}';
     } else if (n.length == 31) {
       int firstNumbers = int.parse(n.substring(0, 1));
       int lastNumbers = int.parse(n.substring(1));
 
-      return '${convertNumberToAfaanOromoText(firstNumbers)} decilliyoonii ${lastNumbers != 0 ? convertNumberToAfaanOromoText(lastNumbers) : ''}';
+      return '${_convertNumberToAfaanOromoText(firstNumbers)} decilliyoonii ${lastNumbers != 0 ? _convertNumberToAfaanOromoText(lastNumbers) : ''}';
     } else if (n.length == 32) {
       int firstNumbers = int.parse(n.substring(0, 2));
       int lastNumbers = int.parse(n.substring(2));
 
-      return '${convertNumberToAfaanOromoText(firstNumbers)} decilliyoonii ${lastNumbers != 0 ? convertNumberToAfaanOromoText(lastNumbers) : ''}';
+      return '${_convertNumberToAfaanOromoText(firstNumbers)} decilliyoonii ${lastNumbers != 0 ? _convertNumberToAfaanOromoText(lastNumbers) : ''}';
     } else if (n.length == 33) {
       int firstNumbers = int.parse(n.substring(0, 3));
       int lastNumbers = int.parse(n.substring(3));
 
-      return '${convertNumberToAfaanOromoText(firstNumbers)} decilliyoonii ${lastNumbers != 0 ? convertNumberToAfaanOromoText(lastNumbers) : ''}';
+      return '${_convertNumberToAfaanOromoText(firstNumbers)} decilliyoonii ${lastNumbers != 0 ? _convertNumberToAfaanOromoText(lastNumbers) : ''}';
     }
     return n;
   }
