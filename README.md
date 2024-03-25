@@ -56,4 +56,4 @@ Contributions to the ethio_numbers are welcomed, If you find any issues or have 
 
 ## Spcial Thanks 🙏
 
-[Yordanos Mekonin](https://www.linkedin.com/in/yordanos-mekonen-2096ab228?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bdq2nJzBvRgufQkP9rIS7MA%3D%3D) who helps me on Tigrigna Numbers
+[Yordanos Mekonen](https://www.linkedin.com/in/yordanos-mekonen-2096ab228?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bdq2nJzBvRgufQkP9rIS7MA%3D%3D) who helps me on Tigrigna Numbers
