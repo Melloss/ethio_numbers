@@ -3,7 +3,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:ethio_numbers/ethio_numbers.dart';
 
 void main() {
-  print(524.53523.toAmharicText());
+  print(14000.toTigrigna());
   group('Amharic Number -> ', () {
     test('when number is 300 it should return ሶስት መቶ', () {
       expect(300.toAmharicText(), 'ሶስት መቶ');
@@ -51,12 +51,27 @@ void main() {
       expect(1000.toAfaanOromoText(), 'kuma');
     });
     test('when number is 100 it should return dhiba afur', () {
-      print(100.toAfaanOromoText());
       expect(100.toAfaanOromoText(), 'dhibba');
     });
     test('when number is 200 it should return lama dhibba', () {
-      print(200.toAfaanOromoText());
       expect(200.toAfaanOromoText(), 'lama dhibba');
+    });
+  });
+  group('Tigrigna Number -> ', () {
+    test('when number is 10 it should return ዓሰርተ', () {
+      expect(10.toTigrigna(), 'ዓሰርተ');
+    });
+    test('when number is 14 it should return ዓሰርተ ኣርባዕተ', () {
+      expect(14.toTigrigna(), 'ዓሰርተ ኣርባዕተ');
+    });
+    test('when number is 1000 it should return ሓደ ሽሕ', () {
+      expect(1000.toTigrigna(), 'ሓደ ሽሕ');
+    });
+    test('when number is 100 it should return ሓደ ሚኢቲ', () {
+      expect(100.toTigrigna(), 'ሓደ ሚኢቲ');
+    });
+    test('when number is 200 it should return lama dhibba', () {
+      expect(205.toTigrigna(), 'ክልተ ሚኢቲ ሓሙሽተ');
     });
   });
 }

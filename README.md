@@ -1,9 +1,10 @@
-`ethio_numbers` package used to convert Arabic number to Amharic or Afaan Oromo text upto decillion (10^33) number.
+`ethio_numbers` package used to convert Arabic number to Amharic, Afaan Oromo or Tigrigna text upto decillion (10^33) number.
 
 ## Features
 
 * Number to Amharic Text.
 * Number to Afaan Oromo Text.
+* Number to Tigrigna Text.
 * Monetize Number to Amharic Text.
 
 ## Getting started
@@ -32,6 +33,8 @@ print(7023.toAmharicText()); //Output: ሰባት ሺ ሀያ ሶስት
 
 print(125.toAfaanOromoText()); //Output:dhibba digdamii shan
 
+print(14000.toTigrigna()); // Output: ዓሰርተ ኣርባዕተ ሽሕ
+
 
 ```
 
@@ -49,5 +52,7 @@ n.toAmharicText(fractionDigits: 2); //Output: አምስት መቶ ሃያ አራ�
 
 ## Contributions
 
-Contributions to the ethio_numbers are welcomed and encouraged! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request on the GitHub repository.
+Contributions to the ethio_numbers are welcomed, If you find any issues or have suggestions for improvements, please open an issue or submit a pull request on the GitHub repository.
 
+## Spcial Thanks
+[Yordanos Mekonin](https://www.linkedin.com/in/yordanos-mekonen-2096ab228?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bdq2nJzBvRgufQkP9rIS7MA%3D%3D) helps me on Tigrigna Numbers

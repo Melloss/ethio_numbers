@@ -1,8 +1,8 @@
-/// The `ethio_numbers` library provides utility extensions for Arabic numbers convertion to corresponding Amharic or Afaan Oromo text.
+/// The `ethio_numbers` library provides utility extensions for Arabic numbers convertion to corresponding Amharic, Afaan Oromo and Tigrigna text.
 ///
 /// This library exports two main components:
-/// - [EthioNumbersInt]: A class used to convert int value to corresponding amharic or afaan oromo text
-/// - [EthioNumbersDouble]: A class used to convert double value to corresponding amharic or afaan oromo text
+/// - [EthioNumbersInt]: A class used to convert int value to corresponding amharic, afaan oromo or Tigrigna text
+/// - [EthioNumbersDouble]: A class used to convert double value to corresponding amharic, afaan oromo or Tigrigna text
 ///
 /// Example usage:
 /// ```dart
@@ -18,6 +18,9 @@
 ///
 ///   // Convert Arabic number to Afaan Oromo Text
 ///   String num = 125.toAfaanOromoText(); // Output: dhibba digdamii shan
+///
+///   // Convert Arabic Number to Tigrigna
+///   String num = 14000.toTigrigna(); // Output: ዓሰርተ ኣርባዕተ ሽሕ
 /// }
 /// ```
 ///

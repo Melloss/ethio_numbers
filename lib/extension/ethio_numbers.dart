@@ -1,5 +1,6 @@
 import 'package:ethio_numbers/amharic_numbers.dart';
 import 'package:ethio_numbers/afaan_oromo_numbers.dart';
+import 'package:ethio_numbers/tigrigna_numbers.dart';
 
 extension EthioNumbersInt on int {
   /// it converts int value to corresponding Amharic Text.
@@ -14,6 +15,13 @@ extension EthioNumbersInt on int {
   /// Returns Afaan Oromo Text.
   String toAfaanOromoText() {
     return AfaanOromoNumber.changeToAfaanOromoText(this);
+  }
+
+  /// it converts int value to corresponding Tigrigna Text.
+  ///
+  /// Returns Tigrigna Text.
+  String toTigrigna() {
+    return TigrignaNumber.changeIntToTigrignaText(this);
   }
 }
 

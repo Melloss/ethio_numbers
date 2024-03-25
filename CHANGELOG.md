@@ -9,3 +9,7 @@
 ## 0.0.3
 
 * double number support added
+
+## 0.0.4 
+
+* tigrigna Number Conversion
