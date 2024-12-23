@@ -21,7 +21,6 @@ dart pub add ethio_numbers
 
 
 ## Usage
-Import the package in your Dart code:
 ```dart
 import 'package:ethio_numbers/ethio_numbers.dart';
 ```
