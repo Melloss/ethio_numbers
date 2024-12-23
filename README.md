@@ -1,4 +1,4 @@
-`ethio_numbers` package used to convert Arabic number to Amharic, Afaan Oromo or Tigrigna text upto decillion (10^33) number.
+`ethio_numbers` package provides a set of extensions for converting numbers to Amharic, Afaan Oromo, and Tigrigna text.
 
 ## Features
 

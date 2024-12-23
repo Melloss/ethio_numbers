@@ -1,6 +1,6 @@
 name: ethio_numbers
-description: "this package used to convert Arabic number to Amharic, Afaan Oromo or Tigrigna text upto decillion (10^33) number."
-version: 0.0.4
+description: "package provides a set of extensions for converting numbers to Amharic, Afaan Oromo, and Tigrigna text."
+version: 0.0.5
 repository: https://github.com/Melloss/ethio_numbers
 
 environment:
